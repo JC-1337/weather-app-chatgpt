@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <main class="app centered">
+
+        <header class="header">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="7" y="7" width="10" height="10"></rect>
+                <line x1="3" y1="9" x2="7" y2="9"></line>
+                <line x1="3" y1="15" x2="7" y2="15"></line>
+                <line x1="17" y1="9" x2="21" y2="9"></line>
+                <line x1="17" y1="15" x2="21" y2="15"></line>
+                <line x1="9" y1="3" x2="9" y2="7"></line>
+                <line x1="15" y1="3" x2="15" y2="7"></line>
+                <line x1="9" y1="17" x2="9" y2="21"></line>
+                <line x1="15" y1="17" x2="15" y2="21"></line>
+            </svg>
+            <h1>Weather App</h1>
+        </header>
+
+        <section class="search">
+
+            <input type="text" placeholder="Enter city" id="city-input">
+
+            <button id="search-btn">
+
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="16.6" y1="16.6" x2="21" y2="21" />
+                </svg>
+
+                Search
+
+            </button>
+
+        </section>
+
+        <section class="weather-card hidden">
+
+            <div class="loading hidden">Loading...</div>
+
+            <div class="top">
+                <div class="city"></div>
+                <div class="time"></div>
+            </div>
+
+            <div class="main-weather">
+                <div class="icon"></div>
+                <div class="temp"></div>
+            </div>
+
+            <div class="description"></div>
+
+            <img class="weather-image" src="assets/img/loading.gif" alt="weather">
+
+            <div class="details">
+                <div class="detail">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2v20M5 12h14" />
+                    </svg>
+                    <span></span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
